@@ -1,0 +1,277 @@
+/*GENERAL*/
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 100%, 74%);
+    --redLight: hsla(0, 100%, 74%, 0.8);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+    --white: hsl(0, 0%, 100%);
+    --small: 2rem;
+    --medium: 4rem;
+    --bid: 6rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    padding: 10rem 2rem;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    margin: 3rem auto;
+}
+
+
+
+.input {
+    position: relative;
+    margin: 4rem auto;
+}
+
+.error-text, .error-icon {
+    display: none;
+}
+
+.error-text {
+    font-size: 1.2rem;
+    color: var(--red);
+    position: absolute;
+    bottom: -22px;
+    right: 0;
+}
+
+.error-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.flex-box {
+    margin: 0 auto;
+    max-width: 400px;
+
+}
+
+/*TOP CONTENT*/
+
+.content-top {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: var(--medium);
+
+}
+
+.primary-main {
+    margin: 0 auto;
+    margin-bottom: var(--small);
+    font-size: 2.8rem;
+}
+
+.primary-sub {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+/*BOTTOM CONTENT*/
+
+.secondary {
+    background-color: var(--blue);
+    color: var(--white);
+    margin: 0 auto;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: var(--small);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.496);
+    margin-bottom: var(--medium);
+}
+
+.secondary-main {
+    
+}
+
+.secondary-sub {
+    font-weight: 400;
+}
+
+
+/*FORM*/
+
+.form-box {
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 2rem 3rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*CALL TO ACTION*/
+
+.btn--cta {
+    background-color: var(--green);
+    border: transparent;
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+small {
+    display: block;
+    text-align: center;
+    color: var(--grayishBlue);
+}
+.small-red {
+    color: var(--red);
+    font-weight: 600;
+    
+}
+@media screen and (min-width: 320px) {
+    body {
+        background-image: linear-gradient(to bottom, hsla(0, 100%, 74%, 0.5), hsla(0, 100%, 74%, 0.5)),
+        url(../images/bg-intro-mobile.png);
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+    }
+}
+
+
+#error-state {
+    background-color: red;
+}
+/* button[type = submit] */
+
+.error {
+    outline: red .4px solid;
+    border-radius: .5rem;
+}
+
+.email-error::placeholder {
+    color: red;
+}
+
+.btn--cta:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+
+    body {
+        background-image: linear-gradient(to bottom, hsla(0, 100%, 74%, 0.5), hsla(0, 100%, 74%, 0.5)),
+        url(../images/bg-intro-desktop.png);
+    }
+
+
+    .flex-box {
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        
+        max-width: 1440px;
+        /* position: absolute;
+        left: 50px;
+        right: 50px;
+        transform: translate(50%, 50%); */
+    }
+
+
+    .content-top {
+        max-width: 500px;
+    }
+
+    input {
+         padding: 2rem 1rem;
+     }
+    /* .form-box {
+        max-width: 500px;
+    }
+    .content-bottom {
+        max-width: 700px; 
+    } */
+
+    .right-box {
+        flex-grow: .5;
+    }
+
+    .left-box {
+        align-self: center;
+    }
+
+    .secondary {
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .secondary-main {
+        margin-right: .3rem;
+    }
+
+    .primary-main {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    .primary-sub {
+        text-align: left;
+    }
+
+    .btn--cta {
+        padding: 2rem 1rem;
+        font-size: 1.7rem;
+    }
+
+    
+    
+}
+
+.btn--cta {
+    box-shadow: 2rem 2rem 2rem var(--grayishBlue);
+}
+
+input[type-text] {
+    color: #000;
+    background-color: white;
+    
+}
+
+input:focus {
+    outline: 2px solid var(--blue);
+    color: #000;
+    background-color: white;
+}

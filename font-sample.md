@@ -1,0 +1,11 @@
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
